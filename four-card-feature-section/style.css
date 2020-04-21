@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #a3a5ae;
+  background-color: #fafafa;
+}
+
+header {
+  width: 80%;
+  max-width: 480px;
+  margin: 5em auto;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6em;
+  font-weight: 200;
+  color: #4c4e61;
+}
+
+header h1.bold {
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 1em;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  margin-bottom: 2em;
+  background-color: white;
+  width: 300px;
+  border-radius: 0.3em;
+}
+
+main .card.cyan {
+  -webkit-box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #45d3d3;
+          box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #45d3d3;
+}
+
+main .card.red {
+  -webkit-box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #ea5353;
+          box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #ea5353;
+}
+
+main .card.orange {
+  -webkit-box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #fcaf4a;
+          box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #fcaf4a;
+}
+
+main .card.blue {
+  -webkit-box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #549ef2;
+          box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #549ef2;
+}
+
+main .card h3 {
+  color: #4c4e61;
+  font-size: 1.2em;
+}
+
+main .card p {
+  margin: 1em 0;
+  font-size: 0.8em;
+  line-height: 2em;
+}
+
+main .card img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0.5em 0;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+@media (min-width: 1024px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
