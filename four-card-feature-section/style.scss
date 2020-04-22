@@ -39,7 +39,7 @@ header {
     font-size: 1.6em;
     font-weight: 200;
     color: $VeryDarkBlue;
-    &.bold {
+    .bold {
       font-weight: 600;
     }
   }
@@ -75,7 +75,7 @@ main {
     &.blue {
       @include top-shadow-color($Blue);
     }
-    h3 {
+    h2 {
       color: $VeryDarkBlue;
       font-size: 1.2em;
     }

@@ -26,7 +26,7 @@ header h1 {
   color: #4c4e61;
 }
 
-header h1.bold {
+header h1 .bold {
   font-weight: 600;
 }
 
@@ -86,7 +86,7 @@ main .card.blue {
           box-shadow: 0 10px 20px -10px #a3a5ae, 0 -4px #549ef2;
 }
 
-main .card h3 {
+main .card h2 {
   color: #4c4e61;
   font-size: 1.2em;
 }
