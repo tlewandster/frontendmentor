@@ -1,0 +1,32 @@
+@mixin design-in-background(
+  $resolution,
+  $mobile-url,
+  $desktop-url,
+  $opacity: 1,
+  $x-translation: 0px,
+  $y-translation: 0px,
+  $z-index: -1
+) {
+  @if $resolution==none {
+  } @else {
+    body {
+      position: relative;
+      &::after {
+        content: '';
+        @if $resolution==mobile {
+          background-image: $mobile-url;
+        } @else if $resolution==desktop {
+          background-image: $desktop-url;
+        }
+        filter: grayscale(1);
+        opacity: $opacity;
+        top: $y-translation;
+        left: $x-translation;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: $z-index;
+      }
+    }
+  }
+}
