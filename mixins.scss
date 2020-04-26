@@ -14,9 +14,9 @@
       &::after {
         content: '';
         @if $resolution==mobile {
-          background-image: $mobile-url;
+          background: $mobile-url no-repeat;
         } @else if $resolution==desktop {
-          background-image: $desktop-url;
+          background: $desktop-url no-repeat;
         }
         filter: grayscale(1);
         opacity: $opacity;
