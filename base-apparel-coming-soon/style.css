@@ -1,1 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Josefin Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #ce9797;
+  height: 100%;
+}
+
+.left-col {
+  max-width: 480px;
+  margin: auto;
+}
+
+header img {
+  height: 1.3em;
+  margin: 2em;
+}
+
+.small-hero {
+  background: url("./images/hero-mobile.jpg") no-repeat center;
+  height: 250px;
+}
+
+main {
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-top: 1.6em;
+}
+
+main h1 .bold {
+  font-weight: 600;
+  color: #413a3a;
+}
+
+main p {
+  font-size: 0.875em;
+  margin: 1.5em 2.5em;
+  line-height: 1.5em;
+}
+
+.form {
+  width: 310px;
+  margin: 2em auto;
+}
+
+.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px #ce9797 solid;
+}
+
+.form form input,
+.form form button {
+  outline: none;
+  border: none;
+  background: none;
+  color: #ce9797;
+  font: inherit;
+}
+
+.form form input {
+  padding-left: 1.8em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 0.8em;
+}
+
+.form form input::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.form form input:-ms-input-placeholder {
+  color: inherit;
+}
+
+.form form input::-ms-input-placeholder {
+  color: inherit;
+}
+
+.form form input::placeholder {
+  color: inherit;
+}
+
+.form form button {
+  width: 4em;
+  background: url(./images/icon-arrow.svg) center no-repeat, linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 22px;
+  -webkit-box-shadow: 0px 10px 20px -10px #ce9797;
+          box-shadow: 0px 10px 20px -10px #ce9797;
+}
+
+.form p {
+  color: #f96262;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  text-align: left;
+  visibility: hidden;
+}
+
+.is-not-valid form {
+  border-color: #f96262;
+}
+
+.is-not-valid form input {
+  background: url("./images/icon-error.svg") no-repeat 90% 50%;
+}
+
+.is-not-valid p {
+  visibility: visible;
+}
+
+.right-col {
+  display: none;
+}
+
+.content {
+  min-height: calc(100vh - 50px);
+}
+
+footer {
+  height: 50px;
+  font-size: 0.8em;
+  padding: 1em;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 1.3em;
+}
