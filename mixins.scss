@@ -30,3 +30,20 @@
     }
   }
 }
+
+@mixin footer {
+  $footer-height: 50px;
+  .content {
+    min-height: calc(100vh - #{$footer-height});
+  }
+  footer {
+    height: $footer-height;
+    font-size: 0.8em;
+    padding: 1em;
+    text-align: center;
+    a {
+      text-decoration: none;
+      font-size: 1.3em;
+    }
+  }
+}
