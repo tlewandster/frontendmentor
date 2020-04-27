@@ -39,7 +39,8 @@
   footer {
     height: $footer-height;
     font-size: 0.8em;
-    padding: 1em;
+    line-height: $footer-height;
+    padding: 0 1em;
     text-align: center;
     a {
       text-decoration: none;

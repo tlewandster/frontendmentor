@@ -10,12 +10,18 @@ body {
   font-size: 16px;
   font-family: 'Josefin Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: #ce9797;
-  height: 100%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .left-col {
-  max-width: 480px;
-  margin: auto;
+  background: linear-gradient(135deg, white, #fff5f5);
 }
 
 header img {
@@ -126,8 +132,12 @@ main p {
   visibility: visible;
 }
 
-.right-col {
+.hero {
   display: none;
+  width: 610px;
+  height: 800px;
+  background: url("./images/hero-desktop.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .content {
@@ -137,11 +147,77 @@ main p {
 footer {
   height: 50px;
   font-size: 0.8em;
-  padding: 1em;
+  line-height: 50px;
+  padding: 0 1em;
   text-align: center;
 }
 
 footer a {
   text-decoration: none;
   font-size: 1.3em;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    max-width: 1440px;
+  }
+  .small-hero {
+    display: none;
+  }
+  .hero {
+    display: block;
+  }
+  .left-col {
+    width: 830px;
+    padding: 0 11%;
+    background: url(./images/bg-pattern-desktop.svg) no-repeat;
+  }
+  header img {
+    height: 2em;
+    margin: 4em 0;
+  }
+  main h1 {
+    font-size: 4em;
+    letter-spacing: 0.3em;
+    line-height: 1.05em;
+    margin-top: 1.1em;
+    text-align: left;
+  }
+  main p {
+    font-size: 1em;
+    margin: 1.6em 0;
+    line-height: 1.6em;
+    text-align: left;
+  }
+  .form {
+    width: 450px;
+    margin: 3em 0;
+  }
+  .form form {
+    height: 56px;
+    border-radius: 28px;
+  }
+  .form form input {
+    padding-left: 2em;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 1em;
+  }
+  .form form input::-webkit-input-placeholder {
+    color: inherit;
+  }
+  .form form input:-ms-input-placeholder {
+    color: inherit;
+  }
+  .form form input::-ms-input-placeholder {
+    color: inherit;
+  }
+  .form form input::placeholder {
+    color: inherit;
+  }
+  .form form button {
+    width: 6em;
+    border-radius: 26px;
+  }
 }

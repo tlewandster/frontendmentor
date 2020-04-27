@@ -27,22 +27,23 @@ $FontSize: 16px;
   none,
   url(./design/mobile-design.jpg),
   url(./design/desktop-design.jpg),
-  0.5,
-  0px,
-  2px,
-  1
+  0.5
 );
 
 body {
   font-size: $FontSize;
   font-family: 'Josefin Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   color: $DesaturatedRed;
-  height: 100%;
+}
+
+.content {
+  display: flex;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .left-col {
-  max-width: 480px;
-  margin: auto;
+  background: $gradient1;
 }
 
 header {
@@ -138,8 +139,79 @@ main {
   }
 }
 
-.right-col {
+.hero {
   display: none;
+  width: 610px;
+  height: 800px;
+  background: url('./images/hero-desktop.jpg') center no-repeat;
+  background-size: cover;
 }
 
 @include footer;
+
+@media (min-width: 1024px) {
+  .content {
+    max-width: 1440px;
+  }
+
+  .small-hero {
+    display: none;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .left-col {
+    width: 830px;
+    padding: 0 11%;
+    background: url(./images/bg-pattern-desktop.svg) no-repeat;
+  }
+
+  header {
+    img {
+      height: 2em;
+      margin: 4em 0;
+    }
+  }
+
+  main {
+    h1 {
+      font-size: 4em;
+      letter-spacing: 0.3em;
+      line-height: 1.05em;
+      margin-top: 1.1em;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1em;
+      margin: 1.6em 0;
+      line-height: 1.6em;
+      text-align: left;
+    }
+  }
+  .form {
+    width: 450px;
+    margin: 3em 0;
+
+    form {
+      height: 56px;
+      border-radius: 56 / 2 * 1px;
+
+      input {
+        padding-left: 2em;
+        flex-grow: 1;
+        font-size: 1em;
+        &::placeholder {
+          color: inherit;
+        }
+      }
+
+      button {
+        width: 6em;
+        border-radius: 56px / 2 - 2px;
+      }
+    }
+  }
+}
