@@ -171,7 +171,7 @@ footer a {
   .left-col {
     width: 830px;
     padding: 0 11%;
-    background: url(./images/bg-pattern-desktop.svg) no-repeat;
+    background: url(./images/bg-pattern-desktop.svg) no-repeat, linear-gradient(135deg, white, #fff5f5);
   }
   header img {
     height: 2em;
